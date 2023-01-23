@@ -40,6 +40,7 @@ module.exports.showCampgroundDetail = async(req,res)=>{
         req.flash('error','error, cannot find campground')
         return res.redirect('/campgrounds')
     }
+    console.log("hi")
     res.render('campgrounds/detail', {campground})
 }
 module.exports.renderEditCampground = async(req,res)=>{

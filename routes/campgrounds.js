@@ -11,6 +11,7 @@ const upload = multer({storage})
 
 
 // CAMPGROUND ROUTES
+console.log("hi")
 
 router.route('/')
     .get(catchAsync(campground.renderCampgroundIndex))
