@@ -20,7 +20,7 @@ mongoose.connection.on('error', err => {      // handles error after initial con
 mongoose.connection.once("open", () => {      // states when db connection is open - once only 
   console.log("database yelpcamp connencted")
 })
-
+// let remainingImages = allImages;
 const selectCity = () => {
   return cities[Math.floor(Math.random() * 1000)]
 }
